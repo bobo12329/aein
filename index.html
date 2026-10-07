@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>aein — A private space for two</title>
+    <meta name="description" content="aein is a private space for couples to stay connected, share moments, and build memories together.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #fffafc;
+            color: #29232a;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: min(1100px, 90%);
+            margin: 0 auto;
+        }
+        
+        header {
+            padding: 28px 0;
+        }
+        
+        .logo {
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            color: #29232a;
+            text-decoration: none;
+        }
+        
+        .hero {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: clamp(42px, 8vw, 76px);
+            line-height: 1.05;
+            letter-spacing: -3px;
+            margin-bottom: 24px;
+        }
+        
+        .hero h1 span {
+            font-weight: 400;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            color: #6f656d;
+            max-width: 620px;
+            margin: 0 auto 34px;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 13px 24px;
+            border-radius: 999px;
+            background: #29232a;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 5px;
+        }
+        
+        .button.secondary {
+            background: transparent;
+            color: #29232a;
+            border: 1px solid #d8cfd5;
+        }
+        
+        .features {
+            padding: 70px 0;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        
+        .feature {
+            background: white;
+            border: 1px solid #eee5eb;
+            border-radius: 20px;
+            padding: 28px;
+        }
+        
+        .feature h3 {
+            margin-bottom: 10px;
+            font-size: 19px;
+        }
+        
+        .feature p {
+            color: #746b72;
+            font-size: 15px;
+        }
+        
+        footer {
+            border-top: 1px solid #eee5eb;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: #6f656d;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        .copyright {
+            color: #8b8188;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 700px) {
+            .hero {
+                min-height: 65vh;
+            }
+            .hero h1 {
+                letter-spacing: -2px;
+            }
+            .hero p {
+                font-size: 17px;
+            }
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">aein</a>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+
+                    <h1>
+                        A private space<br>
+                        <span>for two.</span>
+                    </h1>
+
+                    <p>
+                        aein is a private space for couples to stay connected, share moments, and build memories together.
+                    </p>
+
+                    <a href="support.html" class="button">
+            Get support
+          </a>
+
+                    <a href="privacy.html" class="button secondary">
+            Privacy
+          </a>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+
+                <div class="features-grid">
+
+                    <div class="feature">
+                        <h3>Made for two</h3>
+                        <p>
+                            Keep your shared moments, conversations, plans, and memories in one private place.
+                        </p>
+                    </div>
+
+                    <div class="feature">
+                        <h3>Private by design</h3>
+                        <p>
+                            Your relationship space is designed with privacy and security in mind.
+                        </p>
+                    </div>
+
+                    <div class="feature">
+                        <h3>Grow together</h3>
+                        <p>
+                            Capture the little things that make your relationship yours and create memories along the way.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div class="copyright">
+                    © 2026 aein. All rights reserved.
+                </div>
+
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="delete-account.html">Delete Account</a>
+                    <a href="support.html">Support</a>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
